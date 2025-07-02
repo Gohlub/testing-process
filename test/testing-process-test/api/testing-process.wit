@@ -1,0 +1,34 @@
+interface testing-process {
+use standard.{address};
+
+    record argument {
+        header: string,
+        body: string
+    }
+
+    record return-value {
+        response: string
+    }
+
+    // Function signature for: echo (http)
+    // HTTP: POST /api/echo
+    record echo-signature-http {
+        target: string,
+        arg: argument,
+        returning: return-value
+    }
+
+    // Function signature for: echo (local)
+    record echo-signature-local {
+        target: address,
+        arg: argument,
+        returning: return-value
+    }
+
+    // Function signature for: echo (remote)
+    record echo-signature-remote {
+        target: address,
+        arg: argument,
+        returning: return-value
+    }
+}

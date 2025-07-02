@@ -1,0 +1,4 @@
+world testing-process-template-dot-os-v0 {
+    import testing-process;
+    include process-v1;
+}

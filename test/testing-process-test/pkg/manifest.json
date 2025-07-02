@@ -1,0 +1,17 @@
+[
+    {
+        "process_name": "testing-process-test",
+        "process_wasm_path": "/testing-process-test.wasm",
+        "on_exit": "None",
+        "request_networking": true,
+        "request_capabilities": [
+            "http-client:distro:sys",
+            "testing-process:testing-process:template.os"
+        ],
+        "grant_capabilities": [
+            "http-client:distro:sys",
+            "testing-process:testing-process:template.os"
+        ],
+        "public": true
+    }
+]

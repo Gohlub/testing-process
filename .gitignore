@@ -1,0 +1,10 @@
+api
+!test/testing-process-test/api
+*swp
+**/target
+pkg/*.wasm
+pkg/*.zip
+pkg/ui
+crates/
+caller-utils/
+**/.DS_Store
